@@ -1,0 +1,21 @@
+<div *ngFor="let i of layout" class="col-sm-12 panels">
+  <div *ngIf="i.name === 'Left Panel'">
+    <p>{{ i.type }}</p>
+    <app-listInput (dataEmit)="onAddSubmit($event)"></app-listInput>
+    <br /><br /><br />
+    <div *ngFor="let j of list; let in = index">
+      <!-- <li>{{ j?.name }}</li>
+        <button (click)="onDel(in)">X</button> -->
+      <app-list-item [k]="j" [i]="in" (del)="onDel($event)"></app-list-item>
+    </div>
+    <!-- <app-list-item *ngFor="let j of list" [k]="j"></app-list-item> -->
+  </div>
+  <div *ngIf="i.name === 'Right Panel'">
+    <p>{{ i.type }}</p>
+    <app-list-input-g></app-list-input-g>
+    <br /><br /><br />
+    <div *ngFor="let j of globalStoreDataList; let in = index">
+      <app-list-item-g [k]="j" [i]="in"></app-list-item-g>
+    </div>
+  </div>
+</div>

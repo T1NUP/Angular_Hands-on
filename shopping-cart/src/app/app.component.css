@@ -1,0 +1,21 @@
+.heading{
+    margin: auto;
+    width: 50%;
+    height: 20%;
+    color: blueviolet;
+    text-align: center;
+    font-size: calc(10% + 5vh);
+    text-shadow: 4px 6px 9px blueviolet;
+}
+
+.containers{
+    padding: 2% 0% 0% 0%;
+    display: flow-root;
+    background-color: black;
+    /* display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around; */
+}
+
+

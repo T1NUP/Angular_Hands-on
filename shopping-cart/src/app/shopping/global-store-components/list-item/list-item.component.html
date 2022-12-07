@@ -1,0 +1,31 @@
+<!-- <div *ngIf="isEditable" class="card">
+    <input 
+        type="text" 
+        #box 
+        (keyup.enter)="onEnter(box.value)" 
+        (blur)="onEnter(box.value)"
+        class="form-control" placeholder="{{item.name}}" 
+        aria-label="Username" 
+        aria-describedby="basic-addon1"
+    />
+    <button (click)="delete()">DELETE</button>
+</div>
+<div *ngIf="!isEditable" class="card bg-primary" (click)="edit()">
+    {{item.name}}
+</div> -->
+<div *ngIf="editBox" class="card">
+    <input 
+        type="text" 
+        #box 
+        (keyup.enter)="onEnter(box.value)" 
+        (blur)="onEnter(box.value)"
+        class="form-control" placeholder="{{item.name}}" 
+        aria-label="Username" 
+        aria-describedby="basic-addon1"
+    />
+</div>
+<div *ngIf="!editBox" class="card bg-primary" (click)="editOn()">
+    {{item.name}}
+    <button class="btn btn-danger" (click)="delete(item)">DELETE</button>
+</div>
+<hr/>

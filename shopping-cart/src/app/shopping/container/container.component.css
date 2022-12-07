@@ -1,0 +1,10 @@
+.panels {
+  font: bold;
+  font-size: calc(100% + 1vw);
+  margin: 3% 2%;
+  color: blue;
+  width: 46%;
+  height: 50%;
+  background-color: rgb(145, 145, 203);
+  border: .7vh solid green;
+}

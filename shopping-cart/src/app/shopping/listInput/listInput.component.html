@@ -1,0 +1,9 @@
+<div>
+    <input
+      id="item"
+      type="text"
+      (input)="onTextInput($event)"
+      value="{{ listInput }}"
+    />
+    <button class="btn btn-primary" (click)="onAddClick()">Add</button>
+</div>

@@ -1,0 +1,9 @@
+<div>
+    <input
+      id="item"
+      type="text"
+      #val
+      value='{{val.value}}'
+    />
+    <button class="btn btn-primary" (click)="addValue(val.value); val.value='' ">Add</button>
+</div>
