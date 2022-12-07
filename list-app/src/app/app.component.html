@@ -1,0 +1,22 @@
+<div class="navigation">
+  <img
+    class="logo"
+    src="https://cdn4.buysellads.net/uu/1/127574/1668535591-SStk2-1.jpg"
+  />
+  <div class="menu">
+    <div class="options-left">
+      <div class="btn  options" (click)="goTo('')">Home</div>
+      <div class="btn  options" (click)="goTo('land')">Landing</div>
+      <div class="btn  options" (click)="goTo('')">About</div>
+    </div>
+    <div class="options-right">
+      <div class="btn  options">Help</div>
+    </div>
+  </div>
+</div>
+<!-- <app-home></app-home> -->
+<!-- <app-landing></app-landing> -->
+<div [@routeAnimations]="getRouteAnimationData()">
+  <router-outlet></router-outlet>
+</div>
+

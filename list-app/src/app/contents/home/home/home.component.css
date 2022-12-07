@@ -1,0 +1,43 @@
+.main-body{
+    background-color: darkmagenta;
+    padding: 0 1rem;
+    font-size: 1.75rem;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-control{
+    font-size: 1.25rem;
+}
+
+.card-sz{
+    /* width: 50%; */
+    background-color: yellowgreen;
+    padding: 0.3rem;
+    margin: 1% auto;
+    font-weight: 600;
+}
+
+.border-cn{
+    background-color: rgb(26, 26, 27);
+    display: block;
+    height: 2vh;
+    /* width: 100%; */
+    border: 0 solid blac ;
+}
+
+.border-vr{
+    background-color: rgb(26, 26, 27);
+    display: block;
+    width: 1%;
+    border: 0 solid blac ;
+}
+
+.i-hz{
+    flex-direction: row;
+}
+
+.i-hx{
+    border-radius: 0;
+}

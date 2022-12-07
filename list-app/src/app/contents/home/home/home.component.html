@@ -1,0 +1,67 @@
+<div class="border-cn"></div>
+<div class="main-body row">
+  <div class="card card-sz col-md-5">
+    <div class="card-title">All Data</div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <label for="i1">Item A: </label>
+        <input
+          type="text"
+          class="form-control"
+          id="i1"
+          aria-describedby="emailHelp"
+          placeholder="Item 1"
+          [(ngModel)]="i1"
+          (ngModelChange)="change1($event)"
+        />
+      </li>
+      <li class="list-group-item">
+        <label for="i2">Item B: </label>
+        <input
+          type="text"
+          class="form-control"
+          id="i2"
+          aria-describedby="emailHelp"
+          placeholder="Item 2"
+          [(ngModel)]="i2"
+          (ngModelChange)="change2($event)"
+        />
+      </li>
+      <li class="list-group-item">
+        <label for="i3">Item C: </label>
+        <input
+          type="text"
+          class="form-control"
+          id="i3"
+          aria-describedby="emailHelp"
+          placeholder="Item 3"
+          [(ngModel)]="i3"
+          (ngModelChange)="change3($event)"
+        />
+      </li>
+      <li class="list-group-item">
+        <label for="File1">Example file input: </label>&nbsp;&nbsp;&nbsp;
+        <input type="file" class="form-control-file" id="File1" />
+      </li>
+      <hr/>
+      <div class="btn btn-primary" (click)="postData()">Submit</div>
+    </ul>
+  </div>
+  <div [ngClass]=" getWidth() ? 'border-vr' : 'border-cn'"></div>
+  <div class="card card-sz col-md-5">
+    <div class="card-title">All Data</div>
+    <h2 *ngIf="isLoading">Loading...</h2>
+    <div class="container row">
+      <!-- <ul class="list-group col-md-4">
+        <li class="list-group-item bg-success">H</li>
+        <li class="list-group-item bg-success">H</li>
+        <li class="list-group-item bg-success">H</li>
+      </ul> -->
+      <ul *ngFor="let item of lAll" class="list-group col-md-4">
+        <li class="list-group-item bg-success">{{item}}</li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+<div class="border-cn"></div>

@@ -1,0 +1,23 @@
+.main-body{
+    background-color: chartreuse;
+    margin: 0;
+    padding: 1% 0.5%;
+    /* width: 100%; */
+    transition-duration: 1sec;
+}
+
+h1{
+    text-align: center;
+    background: beige;
+}
+
+h3{
+    margin: 0 auto;
+    text-decoration: underline;
+}
+
+.cdz{
+    margin: 1% auto;
+    border: .25vw solid black;
+    padding: 1% 0%;
+}
