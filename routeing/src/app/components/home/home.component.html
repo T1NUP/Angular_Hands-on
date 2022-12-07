@@ -1,0 +1,14 @@
+<div class="home">
+  <h1>{{ this.title }}</h1>
+  <hr />
+  <ol>
+    <li *ngFor="let i of list">{{ i }}</li>
+  </ol>
+  <input #inp (keyup.enter)="onEnter(inp.value)" />
+  <hr />
+  <input
+    #inpd
+    (keyup.enter)="onEnterForDashboard(inpd.value)"
+    placeholder="username for dashboard"
+  />
+</div>

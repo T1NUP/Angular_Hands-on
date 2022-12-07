@@ -1,0 +1,17 @@
+<div class="home">
+  <h1>DYNAMIC LIST</h1>
+  <hr />
+  <ol>
+    <li *ngFor="let i of list">{{ i }}</li>
+  </ol>
+  <input #inp (keyup.enter)="onEnter(inp.value)" />
+  <hr />
+  <ul>
+    <li *ngFor="let i of list">{{ i }}</li>
+  </ul>
+  <!-- <input
+    #inpd
+    (keyup.enter)="onEnterForDashboard(inpd.value)"
+    placeholder="username for dashboard"
+  /> -->
+</div>

@@ -1,0 +1,9 @@
+.dashboard{
+    background: rgb(254, 152, 115);
+    margin: 0 0;
+    height: 50vh;
+}
+
+.dashboard h1{
+    margin: 0 2vw;
+}

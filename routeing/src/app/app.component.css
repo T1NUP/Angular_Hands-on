@@ -1,0 +1,60 @@
+.navbar{
+    /* background-color: blueviolet;
+    display: flex; */
+    width: 100%;
+    margin: 0;
+    border: 0;
+}
+
+.navbar-child{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    border-radius: 0 0 3% 3%;
+}
+
+.navbar-child button{
+    background: blueviolet;
+    border: 0;
+    font-weight: 400;
+    transition-duration: 0.7s;
+}
+
+.navbar-child button:hover{
+    background: grey;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.navbar-child a{
+    text-decoration: solid;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo p{
+    margin: 10% 2%;
+    font-weight: 700;
+    text-decoration: dotted;
+}
+
+.logo img{
+    height: 10vh;
+    width: 5vw;
+    margin: 2vh 3vw;
+}
+
+.active{
+    background: gainsboro;
+    color: black;
+    padding-top: 1vh;
+    font-style: italic;
+    font-weight: 700;
+}
+

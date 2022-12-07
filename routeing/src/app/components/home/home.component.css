@@ -1,0 +1,9 @@
+.home{
+    background: pink;
+    margin: 0 0;
+    height: 50vh;
+}
+
+.home h1{
+    margin: 0 2vw;
+}

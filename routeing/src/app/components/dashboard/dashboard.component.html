@@ -1,0 +1,24 @@
+<div class="dashboard">
+    <h1>{{this.title}}</h1>
+    <!-- <h3>Welcome {{this.user}}</h3> -->
+    <!-- <app-display-user></app-display-user> -->
+    <router-outlet></router-outlet>
+    <hr/>
+    <ol>
+        <li *ngFor="let i of list">{{i}}</li>
+    </ol>
+    <input #inp (keyup.enter)="onEnter(inp.value)" />
+    <hr/>
+    <input
+    #inpd
+    (keyup.enter)="onEnterForDashboard(inpd.value)"
+    placeholder="change username for dashboard"
+    />
+    <hr />
+    <label>Send to SERVER: </label> &nbsp; 
+    <input
+      #inps
+      (keyup.enter)="onEnterToServer(inps.value)"
+      placeholder="list item"
+    />
+</div>

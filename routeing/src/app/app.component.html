@@ -1,0 +1,18 @@
+<div class="navbar-child">
+    <div class="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/1056/1056086.png"/>
+        <p>{{this.company}} Company</p>
+    </div>
+    <div class="home">
+        <button routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a   routerLink="/home" >Home</a></button>
+    </div>
+    <div class="dashboard">
+        <button routerLinkActive="active" ><a  routerLink="/dashboard" >Dashboard</a></button>
+    </div>
+    <div class="dashboard">
+        <button routerLinkActive="active" ><a  routerLink="/list" >List</a></button>
+    </div>
+</div>
+<!-- <app-home></app-home> -->
+<!-- <app-dashboard></app-dashboard> -->
+<router-outlet></router-outlet>
